@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    // bài 1
+    // myColor = ["Red", "Green", "White", "Black"];
+    // document.write(myColor.concat())
+    // bài 2
+//     let numberA = (prompt('enter one'))
+//     let numberB = numberA.toString();
+//     let result = [numberB[0]];
+//
+//     for (let i = 1; i < numberB.length ; i++) {
+//         if (numberB[i - 1]%2 === 0 && numberB[i]%2 ===0){
+//             result.push(' - ' , numberB[i])
+//         }
+//         else {
+//             result.push(numberB[i]);
+//         }
+//     }
+// document.write(result.join(' '));
+//     bài 3
+    var str = 'chfssasffasfasas';
+    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    var result = [];
+
+    for(var x=0; x<str.length; x++)
+    {
+        if(UPPER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+
+</script>
+
+
+</body>
+</html>

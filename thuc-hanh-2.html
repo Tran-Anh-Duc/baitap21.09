@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viết chương trình từ điển</title>
+</head>
+<body>
+
+<input type="text" id="mot">
+<button onclick="an()" value="" id="hai">ấn</button>
+<p id="result"></p>
+
+<script>
+    let english = ['one','two','three','four','five',]
+    let vietname = ['mot','hai','ba','bon','nam',]
+    function an() {
+        let  ba = document.getElementById('mot').value;
+        for (let i = 0; i < english.length; i++) {
+            if (ba == english[i] ){
+                document.getElementById('result').innerHTML = vietname[i];
+            }
+        }
+    }
+</script>
+
+
+
+</body>
+</html>
